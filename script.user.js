@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      0.22
+// @version      0.23
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       *://*/*
@@ -11,9 +11,11 @@
 
 // We're already at version 20!
 // 0.21: moving this into multiple functions. hope this works.
+// 0.22: Still not working.
+// 0.23: Perhaps removing quotes would work?
 
 function applyWebmote(code, link) {
-    $("div:contains('[' + code + ']')").html(function (_, html) {
+    $(div:contains('[' + code + ']')).html(function (_, html) {
          return html.replace('[' + code + ']',"<img src='" + link + "' />");
     });
 }
@@ -41,7 +43,7 @@ $("div:contains('[animationtest]')").html(function (_, html) { // test for anima
 });
 
 $("div:contains('[yourversion]')").html(function (_, html) { // displays the current version
-     return html.replace("[yourversion]","0.22"); // make sure this stays up to date!
+     return html.replace("[yourversion]","0.23"); // make sure this stays up to date!
 });
 
 $("div:contains('[billcipherwheel]')").html(function (_, html) { // bill cipher wheel
