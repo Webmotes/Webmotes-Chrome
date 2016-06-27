@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      0.21
+// @version      0.22
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       *://*/*
@@ -13,8 +13,8 @@
 // 0.21: moving this into multiple functions. hope this works.
 
 function applyWebmote(code, link) {
-    $("div:contains('[' + code + ']')").html(function (_, html) { // proof that it works
-         return html.replace("'[' + code + ']'","<img src='" + link + "' />");
+    $("div:contains('[' + code + ']')").html(function (_, html) {
+         return html.replace('[' + code + ']',"<img src='" + link + "' />");
     });
 }
 
@@ -39,9 +39,9 @@ $("div:contains('[frown]')").html(function (_, html) { // frown
 $("div:contains('[animationtest]')").html(function (_, html) { // test for animation
      return html.replace("[animationtest]","<img src='https://i.imgur.com/NhxgpdA.gif' />");
 });
-https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbFB_48feefIAvILEDvptvUV76sEVRaepT_VbXsXU7etqDcwdT
+
 $("div:contains('[yourversion]')").html(function (_, html) { // displays the current version
-     return html.replace("[yourversion]","1.19");
+     return html.replace("[yourversion]","0.22"); // make sure this stays up to date!
 });
 
 $("div:contains('[billcipherwheel]')").html(function (_, html) { // bill cipher wheel
