@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      0.17
+// @version      0.18
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       *://*/*
@@ -23,4 +23,12 @@ $("div:contains('[flipped-smile]')").html(function (_, html) { // dark version o
 
 $("div:contains('[frown]')").html(function (_, html) { // dark version of itworks
      return html.replace("[frown]","<img src='http://i.imgur.com/h206D7y.png' />");
+});
+
+$("div:contains('[animationtest]')").html(function (_, html) { // dark version of itworks
+     return html.replace("[animationtest]","<img src='https://i.imgur.com/NhxgpdA.gif' />");
+});
+
+$("div:contains('[yourversion]')").html(function (_, html) { // dark version of itworks
+     return html.replace("[yourversion]","1.18");
 });
