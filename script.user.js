@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      0.7
+// @version      0.8
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       http*://reddit.com
@@ -18,6 +18,7 @@ function addJQuery(callback) {
         document.body.appendChild(script);
     }, false);
     document.body.appendChild(script);
+}
 
 $(".forum-threadview-post-text:contains('[itworks]')").html(function (_, html) {
      return html.replace(/[itworks]/g,"<img src='http://i.imgur.com/BjaY6nR.png' />");
