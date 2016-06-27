@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      0.19
+// @version      0.20
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       *://*/*
 // @grant        none
 // @require    http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js
 // ==/UserScript==
+
+// We're already at version 20!
 
 $("div:contains('[itworks]')").html(function (_, html) { // proof that it works
      return html.replace("[itworks]","<img src='http://i.imgur.com/BjaY6nR.png' />");
@@ -39,4 +41,16 @@ $("div:contains('[billcipherwheel]')").html(function (_, html) { // bill cipher 
 
 $("div:contains('[billcipherdeal]')").html(function (_, html) { // bill cipher making a deal
      return html.replace("[billcipherdeal]","<img src='https://i1.sndcdn.com/artworks-000058208109-z2pw13-small.jpg' />");
+});
+
+$("div:contains('[rainbow]')").html(function (_, html) {
+     return html.replace("[rainbow]","<img src='https://raw.githubusercontent.com/IAP-Reloaded/Webmotes/master/Rainbow.png' />");
+});
+
+$("div:contains('[reverse-rainbow]')").html(function (_, html) {
+     return html.replace("[reverse-rainbow]","<img src='https://raw.githubusercontent.com/IAP-Reloaded/Webmotes/master/Backwards%20Rainbow.png' />");
+});
+
+$("div:contains('[itworks-white]')").html(function (_, html) {
+     return html.replace("[itworks-white]","<img src='https://raw.githubusercontent.com/IAP-Reloaded/Webmotes/master/It%20Works%20White.png' />");
 });
