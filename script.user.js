@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      0.5
+// @version      0.6
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       http*://reddit.com
 // @grant        none
+// @require http://code.jquery.com/jquery-latest.js
 // ==/UserScript==
 
 $(".forum-threadview-post-text:contains('[itworks]')").html(function (_, html) {
