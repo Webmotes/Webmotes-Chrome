@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      0.2
+// @version      0.3
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
-// @match       *
+// @match        http*:*.*.*
 // @grant        none
 // ==/UserScript==
 
