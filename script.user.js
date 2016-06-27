@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      0.11
+// @version      0.12
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       *://*/*
@@ -21,6 +21,7 @@ function addJQuery(callback) {
     document.body.appendChild(script);
 }
 
+function updateWebmotes {
 $(".forum-threadview-post-text:contains('[itworks]')").html(function (_, html) {
      return html.replace("[itworks]","<img src='http://i.imgur.com/BjaY6nR.png' />");
 });
@@ -28,3 +29,6 @@ $(".forum-threadview-post-text:contains('[itworks]')").html(function (_, html) {
 $(".forum-threadview-post-text:contains('[itworks-dark]')").html(function (_, html) {
      return html.replace(/[itworks-dark]/g,"<img src='http://i.imgur.com/2u9WdEk.png' />");
 });
+
+updateWebmotes();
+}
