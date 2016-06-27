@@ -1,27 +1,14 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      0.12
+// @version      0.15
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       *://*/*
 // @grant        none
-// @require http://code.jquery.com/jquery-latest.js
-// @require    http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js
+// @require    http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js
 // ==/UserScript==
 
-function addJQuery(callback) {
-    var script = document.createElement("script");
-    script.setAttribute("src", "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js");
-    script.addEventListener('load', function() {
-        var script = document.createElement("script");
-        script.textContent = "window.jQ=jQuery.noConflict(true);(" + callback.toString() + ")();";
-        document.body.appendChild(script);
-    }, false);
-    document.body.appendChild(script);
-}
-
-function updateWebmotes {
 $(".forum-threadview-post-text:contains('[itworks]')").html(function (_, html) {
      return html.replace("[itworks]","<img src='http://i.imgur.com/BjaY6nR.png' />");
 });
@@ -29,6 +16,3 @@ $(".forum-threadview-post-text:contains('[itworks]')").html(function (_, html) {
 $(".forum-threadview-post-text:contains('[itworks-dark]')").html(function (_, html) {
      return html.replace(/[itworks-dark]/g,"<img src='http://i.imgur.com/2u9WdEk.png' />");
 });
-
-updateWebmotes();
-}
