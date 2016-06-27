@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      0.20
+// @version      0.21
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       *://*/*
@@ -10,6 +10,15 @@
 // ==/UserScript==
 
 // We're already at version 20!
+// 0.21: moving this into multiple functions. hope this works.
+
+function applyWebmote(code, link) {
+    $("div:contains('[' + code + ']')").html(function (_, html) { // proof that it works
+         return html.replace("'[' + code + ']'","<img src='" + link + "' />");
+    });
+}
+
+applyWebmote("minecraft-diamond", "https://github.com/IAP-Reloaded/Webmotes/raw/master/Grid_Diamant.png");
 
 $("div:contains('[itworks]')").html(function (_, html) { // proof that it works
      return html.replace("[itworks]","<img src='http://i.imgur.com/BjaY6nR.png' />");
