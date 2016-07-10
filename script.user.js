@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      1.02.1
+// @version      1.03
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       *://*/*
@@ -13,14 +13,15 @@
 // 1.00.1: Fixed version number
 // 1.01: Bigger Facebook icon, fixed backwards rainbow
 // 1.02: Fixed version Webmote issue probably
-// 1.00.1: Fixed version number (again!)
+// 1.02.1: Fixed version number (again!)
+// 1.03: Fixed "==" operator
 
 var version = 1.02.1
 
 function applyWebmote(code, url) {
   var replace = "[" + code + "]"
   $("div:contains(" + replace + ")").html(function(_, html) {
-    if (url = version) {
+    if (url == "version") {
       return html.replace(replace, "<img src='" + url + "'>");
     } else {
       return html.replace(replace, version);
