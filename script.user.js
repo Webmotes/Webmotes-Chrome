@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      1.05.1
+// @version      1.05.2
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match        *://*/*
@@ -10,8 +10,9 @@
 
 // 1.05: New linkable Webmotes
 // 1.05.1: Linked it directly.
+// 1.05.2: Quick fix for Stack Overflow URL
 
-var version = "1.05.1"
+var version = "1.05.2"
 
 function applyWebmote(code, image, link) {
   var replace = "[" + code + "]"
@@ -20,7 +21,7 @@ function applyWebmote(code, image, link) {
   });
 } 
 
-applyWebmote("stackoverflow", "http://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d", "stackoverflow.com");
+applyWebmote("stackoverflow", "http://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d", "https://www.stackoverflow.com");
 applyWebmote("minecraft-diamond", "https://github.com/IAP-Reloaded/Webmotes/raw/master/Grid_Diamant.png", "");
 applyWebmote("facebook", "http://screenshots.en.sftcdn.net/en/scrn/69665000/69665708/facebook-chat-notification-02-32x32.png", "");
 applyWebmote("itworks", "http://i.imgur.com/BjaY6nR.png", "")
