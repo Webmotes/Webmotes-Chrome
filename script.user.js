@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      1.03.1
+// @version      1.03.2
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       *://*/*
@@ -16,8 +16,9 @@
 // 1.02.1: Fixed version number (again!)
 // 1.03: Fixed "==" operator
 // 1.03.1: Fixed var version
+// 1.03.2: Now a string
 
-var version = 1.03.1
+var version = "1.03.2"
 
 function applyWebmote(code, url) {
   var replace = "[" + code + "]"
