@@ -1,5 +1,5 @@
 # Webmotes
-Emoji to be used over the entire web.
+Emoji to be used over the entire web. Used in <div> tags.
 
 Code | Displays | JSFiddle
 :---: | :---: | :---:
