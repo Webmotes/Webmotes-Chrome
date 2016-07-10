@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      1.00.1
+// @version      1.01
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       *://*/*
@@ -12,7 +12,7 @@
 // 1.00: Functions now working! Added facebook one too. Version variable too
 // 1.00.1: Fixed version number
 
-var version = 1.00.1
+var version = 1.01
 
 function applyWebmote(code, url) {
   var replace = "[" + code + "]"
@@ -22,7 +22,7 @@ function applyWebmote(code, url) {
 } 
 
 applyWebmote("minecraft-diamond", "https://github.com/IAP-Reloaded/Webmotes/raw/master/Grid_Diamant.png");
-applyWebmote("facebook", "http://ownlocal-adforge-assets.s3.amazonaws.com/production/social/facebook-03b14203ab0e8e3c82388d329d0a57b5d116b7e784060ba214be6571ea6653f8.png");
+applyWebmote("facebook", "http://screenshots.en.sftcdn.net/en/scrn/69665000/69665708/facebook-chat-notification-02-32x32.png");
 applyWebmote("itworks", "http://i.imgur.com/BjaY6nR.png")
 applyWebmote("itworks-dark", "http://i.imgur.com/2u9WdEk.png")
 applyWebmote("flipped-smile", "http://i.imgur.com/OuFD0NS.png")
@@ -32,5 +32,5 @@ applyWebmote("yourversion", version)
 applyWebmote("billcipherwheel", "https://i1.sndcdn.com/artworks-000132224764-hvpveo-small.jpg")
 applyWebmote("billcipherdeal", "https://i1.sndcdn.com/artworks-000058208109-z2pw13-small.jpg")
 applyWebmote("rainbow", "https://raw.githubusercontent.com/IAP-Reloaded/Webmotes/master/Rainbow.png")
-applyWebmote("reverse-rainbow", "https://raw.githubusercontent.com/IAP-Reloaded/Webmotes/master/Backwards%20Rainbow.png")
+applyWebmote("backwards-rainbow", "https://raw.githubusercontent.com/IAP-Reloaded/Webmotes/master/Backwards%20Rainbow.png")
 applyWebmote("itworks-white", "https://raw.githubusercontent.com/IAP-Reloaded/Webmotes/master/It%20Works%20White.png")
