@@ -11,13 +11,19 @@
 
 // 1.00: Functions now working! Added facebook one too. Version variable too
 // 1.00.1: Fixed version number
+// 1.01: Bigger Facebook icon, fixed backwards rainbow
+// 1.02: Fixed version issue probably
 
-var version = 1.01
+var version = 1.02
 
 function applyWebmote(code, url) {
   var replace = "[" + code + "]"
   $("div:contains(" + replace + ")").html(function(_, html) {
-    return html.replace(replace, "<img src='" + url + "'>");
+    if (url = version) {
+      return html.replace(replace, "<img src='" + url + "'>");
+    } else {
+      return html.replace(replace, version);
+    }
   });
 } 
 
