@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      0.23
+// @version      1.00.1
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       *://*/*
@@ -9,13 +9,10 @@
 // @require    http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js
 // ==/UserScript==
 
-// We're already at version 20!
-// 0.21: moving this into multiple functions. hope this works.
-// 0.22: Still not working.
-// 0.23: Perhaps removing quotes would work?
 // 1.00: Functions now working! Added facebook one too. Version variable too
+// 1.00.1: Fixed version number
 
-var version = 1.00
+var version = 1.00.1
 
 function applyWebmote(code, url) {
   var replace = "[" + code + "]"
