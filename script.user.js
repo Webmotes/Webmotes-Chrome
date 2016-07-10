@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Webmotes
 // @namespace    http://iap-reloaded.github.io/Webmotes
-// @version      1.01
+// @version      1.02.1
 // @description  emoji to be used over the entire web
 // @author       IAP-Reloaded
 // @match       *://*/*
@@ -12,9 +12,10 @@
 // 1.00: Functions now working! Added facebook one too. Version variable too
 // 1.00.1: Fixed version number
 // 1.01: Bigger Facebook icon, fixed backwards rainbow
-// 1.02: Fixed version issue probably
+// 1.02: Fixed version Webmote issue probably
+// 1.00.1: Fixed version number (again!)
 
-var version = 1.02
+var version = 1.02.1
 
 function applyWebmote(code, url) {
   var replace = "[" + code + "]"
