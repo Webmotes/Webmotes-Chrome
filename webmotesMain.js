@@ -1,6 +1,6 @@
-var version = "1.07";
-var subversion = "";
-var fullversion = version + subversion;
+var version = "2";
+var subversion = "1";
+var fullversion = version + "." + subversion;
 
 function applyWebmote(code, image, link) {
   var replace = "[" + code + "]"
@@ -21,9 +21,13 @@ applyWebmote("itworks-dark", "http://i.imgur.com/2u9WdEk.png", "");
 applyWebmote("flipped-smile", "http://i.imgur.com/OuFD0NS.png", "");
 applyWebmote("frown", "http://i.imgur.com/h206D7y.png", "");
 applyWebmote("animationtest", "https://i.imgur.com/NhxgpdA.gif", "");
-applyWebmote("version", "https://github.com/IAP-Reloaded/Webmotes/blob/master/" + version + "%20Version%20Number.png?raw=true", ""); // Make sure to update this! May change version to fullversion later
 applyWebmote("billcipherwheel", "https://i1.sndcdn.com/artworks-000132224764-hvpveo-small.jpg", "");
 applyWebmote("billcipherdeal", "https://i1.sndcdn.com/artworks-000058208109-z2pw13-small.jpg", "");
 applyWebmote("rainbow", "https://raw.githubusercontent.com/IAP-Reloaded/Webmotes/master/Rainbow.png", "");
 applyWebmote("backwards-rainbow", "https://raw.githubusercontent.com/IAP-Reloaded/Webmotes/master/Backwards%20Rainbow.png", "");
 applyWebmote("itworks-white", "https://raw.githubusercontent.com/IAP-Reloaded/Webmotes/master/It%20Works%20White.png", "");
+
+  var replace = "[version]"
+  $("div:contains(" + replace + ")").html(function(_, html) {
+      return html.replace(replace, fullversion);
+  });
