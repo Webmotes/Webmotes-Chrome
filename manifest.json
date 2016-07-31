@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Webmotes",
-	"version": “2.3",
+	"version": "2.3",
 	"permissions": ["tabs", "http://*/*"],
         "content_scripts": [{
             "matches" : ["https://*/*"],
