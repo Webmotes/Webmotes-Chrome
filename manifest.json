@@ -1,11 +1,11 @@
 {
 	"manifest_version": 2,
 	"name": "Webmotes",
-	"version": "3.1",
+	"version": “2.2”,
 	"permissions": ["tabs", "http://*/*"],
         "content_scripts": [{
             "matches" : ["https://*/*"],
-            "js" : ["jquery.js", "webmotesMain.js"]
+            "js" : ["jquery.js", "webmotesMain.js", "webmotesCopier.js"]
         }],
         "browser_action": {
              "default_icon": "icon.png"
