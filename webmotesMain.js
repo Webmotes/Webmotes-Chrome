@@ -1,11 +1,11 @@
 var version = "2";
-var subversion = "4";
+var subversion = "4.2";
 var fullversion = version + "." + subversion;
 
 function applyWebmote(code, image, link) {
   var replace = "[" + code + "]"
   $("div:contains(" + replace + ")").html(function(_, html) {
-      return html.replace(replace, "<a href='" + link + "'><img height="32" width="32"src='" + image + "'></a>");
+      return html.replace(replace, "<a href='" + link + "'><img height='32' width='32' src='" + image + "'></a>");
   });
 } 
 
