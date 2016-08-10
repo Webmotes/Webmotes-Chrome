@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/IAP-Reloaded/Webmotes.png?label=ready&title=Ready)](https://waffle.io/IAP-Reloaded/Webmotes)
 # Webmotes
 Emoji to be used over the entire web. Used in <div> tags.
 
