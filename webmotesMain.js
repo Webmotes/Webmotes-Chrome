@@ -45,7 +45,15 @@ applyWebmote("backwards-rainbow", "https://raw.githubusercontent.com/IAP-Reloade
 
 applyWebmote("itworks-white", "https://raw.githubusercontent.com/IAP-Reloaded/Webmotes/master/It%20Works%20White.png", "");
 
-applyWebmote("webmotes", "https://avatars0.githubusercontent.com/u/21102137?v=3&s=200" "https://github.com/Webmotes/");
+applyWebmote("webmotes", "https://avatars0.githubusercontent.com/u/21102137?v=3&s=200", "https://github.com/Webmotes/");
+
+applyWebmote("2.5", "https://github.com/Webmotes/Webmotes-Library/blob/master/2.5%20Version%20Number.png?raw=true", "");
+
+applyWebmote("1.04", "https://github.com/Webmotes/Webmotes-Library/blob/master/1.04%20Version%20Number.png?raw=true", "");
+
+applyWebmote("1.05", "https://github.com/Webmotes/Webmotes-Library/blob/master/1.05%20Version%20Number.png?raw=true", "");
+
+applyWebmote("1.06", "https://github.com/Webmotes/Webmotes-Library/blob/master/1.06%20Version%20Number.png?raw=true", "");
 
   var replace = "[version]"
   $("div:contains(" + replace + ")").html(function(_, html) {
