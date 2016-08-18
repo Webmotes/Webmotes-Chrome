@@ -1,5 +1,5 @@
 var version = "2";
-var subversion = "4.2";
+var subversion = "5";
 var fullversion = version + "." + subversion;
 
 function applyWebmote(code, image, link) {
@@ -45,6 +45,7 @@ applyWebmote("backwards-rainbow", "https://raw.githubusercontent.com/IAP-Reloade
 
 applyWebmote("itworks-white", "https://raw.githubusercontent.com/IAP-Reloaded/Webmotes/master/It%20Works%20White.png", "");
 
+applyWebmote("webmotes", "https://avatars0.githubusercontent.com/u/21102137?v=3&s=200" "https://github.com/Webmotes/"
 
   var replace = "[version]"
   $("div:contains(" + replace + ")").html(function(_, html) {
